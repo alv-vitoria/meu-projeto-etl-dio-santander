@@ -1,4 +1,11 @@
 <p align="center">
+<img src="https://raw.githubusercontent.com/alv-vitoria/meu-projeto-etl-dio-santander/refs/heads/main/imgs/bannerdio.png" 
+  height="299px" 
+  alt="Banner do Projeto ETL">
+</p>
+
+
+<p align="center">
   <!-- Python -->
   <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
   
@@ -21,92 +28,113 @@
 
 
 
-
-
-
-
-## **🚀 Projeto ETL - Santander / DIO** 
+## **🚀 Projeto ETL - Santander / DIO**   
 *Explorando IA Generativa em um Pipeline de ETL com Python*
 
-Este projeto implementa um pipeline completo de ETL (Extract, Transform, Load) utilizando Python, Pandas e engenharia de dados.
+Este projeto implementa um pipeline completo de ETL (Extract, Transform, Load) utilizando Python, Pandas, logs estruturados, regras inteligentes e geração de gráfico automatizado, simulando um fluxo real usado por empresas no tratamento de dados.
 
-Além do fluxo principal, o projeto foi expandido com:
+O objetivo é demonstrar domínio em:
+- Estruturação de pipelines
+- Transformação de dados com regras inteligentes
+- Geração de gráficos
+- Boas práticas com logs e diretórios
+- Ambiente Python profissional
+
+
+## 📁 Estrutura do Projeto
+```
+─── projeto_etl/
+├── dados/               # Arquivos de entrada (.xlsx)
+├── imgs/                # Gráficos gerados pelo ETL
+├── logs/                # Logs do processo ETL
+├── output/              # Arquivos finais gerados (.xlsx)
+├── etl_projeto_DIO.py   # Script principal do pipeline
+├── requirements.txt     # Dependências do projeto
+├── README.md            # Documentação
+└── .gitignore           # Arquivos ignorados pelo Git
+ ```
+
+## 🧠 Funcionalidades do Projeto
+
+O pipeline foi ampliado para incluir recursos avançados:
 
 - Geração de mensagens personalizadas
-- Regras inteligentes
-- Logs estruturados
-- Dashboard simples (gráfico)
-- Ambiente virtual isolado
+- Regras inteligentes para cada tipo de cliente
+- Logs estruturados e organizados
+- Dashboard simples (gráficos gerados automaticamente)
+- Ambiente virtual isolado (venv)
 - Pipeline pronto para execução automática
 
-## Estrutura do Projeto
+### 🟦 ETAPA 1 — Extração
+- Leitura automática da planilha de clientes.
 
-```📂 projeto_etl/ ```
 
-```├── dados/               # Arquivos de entrada (.xlsx)```
+### 🟧 ETAPA 2 — Transformação
+- Aplicação de regras inteligentes:
+- Gasto alto → mensagem premium
+- Email Gmail → sugestão de usar o app mobile
+- Interesse em cartão → mensagem específica
+- Mensagens personalizadas simulando IA generativa (sem usar modelos externos)
 
-```├── imgs/                # Gráficos gerados pelo ETL```
 
-```├── logs/                # Logs do processo ETL```
+### 🟥 ETAPA 3 — Carregamento  
+A saída final é salva em:  
+```output/mensagens_clientes.xlsx```
 
-```├── output/              # Arquivos finais gerados (.xlsx)```
+**Logs estruturados**  
+O processo inteiro gera logs profissionais em:  
+```logs/etl.log```
 
-```├── etl_projeto_DIO.py   # Script principal do pipeline```
 
-```├── requirements.txt     # Dependências do projeto```
+**Gráfico automático**  
+Um gráfico com a distribuição de gastos por produto é salvo em:  
+```imgs/gasto_por_produto.png```
 
-```├── README.md            # Documentação```
+*Exemplo:*
+<p align="center">
+  <img src="https://raw.githubusercontent.com/alv-vitoria/meu-projeto-etl-dio-santander/refs/heads/main/imgs/gasto_por_produto.png"
+       alt="Gráfico de Gasto Total por Produto"
+       height="320px"
+       style="border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.4);">
+</p>
 
-```└── .gitignore           # Arquivos ignorados pelo Git ```
 
-## Tecnologias utilizadas
-- Python 3
-- Pandas
-- OpenPyXL
-- Matplotlib
-- Logging
-- VS Code
-- Virtual Environment (venv)
 
-## Executando o projeto
+## 🪛 Tecnologias utilizadas  
+| Tecnologia     | Descrição                      |
+| -------------- | ------------------------------ |
+| **Python 3**   | Linguagem principal do projeto |
+| **Pandas**     | Manipulação de dados           |
+| **OpenPyXL**   | Leitura e escrita em Excel     |
+| **Matplotlib** | Geração de gráficos            |
+| **Logging**    | Sistema de logs                |
+| **Venv**       | Ambiente virtual               |
+| **VS Code**    | Desenvolvimento                |
 
-1 - Ative o ambiente virtual
-"source .venv/bin/activate"
 
-2 - Instale as dependências
-"pip install -r requirements.txt"
+## ▶ Como executar o projeto  
+1 - Ative o ambiente virtual  
+```"source .venv/bin/activate"```
 
-3 - Execute o ETL
-"python3 etl_projeto_DIO.py"
+2 - Instale as dependências  
+```"pip install -r requirements.txt"```
 
-## Resultados
-O pipeline gera:
+3 - Execute o ETL  
+```"python3 etl_projeto_DIO.py"```
 
+
+## ⚙️ O pipeline gera automaticamente:
 - Planilha final transformada
 - Relatórios de logs
 - Gráfico de distribuição dos clientes
 - Mensagens e regras sobre o tipo de utilização de cada cliente
 
-Exemplo de gráfico gerado: *Gráfico de Gasto total por Produto*
-![Gráfico de Gasto total por Produto](https://raw.githubusercontent.com/alv-vitoria/meu-projeto-etl-dio-santander/refs/heads/main/imgs/gasto_por_produto.png)
-
-
-## Regras sobre o tipo de utilização de cada cliente
-
-- Clientes com gasto alto → mensagem premium
-- Clientes do Gmail → sugestão de app mobile
-- Compras com cartão → mensagem específica
-- e muito mais…
-
-## Objetivo do Projeto
-Demonstrar conhecimentos aplicados sobre:
-
-- ETL real com Python
-- Organização de projeto
-- Geração de insights e gráficos visuais
+## 🎯 Objetivo do Projeto
+- Criar um pipeline ETL profissional em Python
+- Aplicar regras de negócio inteligentes
+- Gerar gráficos úteis para tomada de decisão
 - Preparação para projetos de dados no mundo real
 
-## Autora
-Vitória Alvares dos Santos
-
-Projeto do Bootcamp Santander/DIO 2025 - Ciência de Dados com Python
+## ✨ Autora
+Vitória Alvares dos Santos  
+*Projeto do Bootcamp Santander/DIO - Ciência de Dados com Python (2025)*
