@@ -28,8 +28,8 @@
 
 
 
-## **🚀 Projeto ETL - Santander / DIO**   
-*Explorando IA Generativa em um Pipeline de ETL com Python*
+# **🚀 Projeto ETL - Santander / DIO**   
+### *Explorando IA Generativa em um Pipeline de ETL com Python*
 
 Este projeto implementa um pipeline completo de ETL (Extract, Transform, Load) utilizando Python, Pandas, logs estruturados, regras inteligentes e geração de gráfico automatizado, simulando um fluxo real usado por empresas no tratamento de dados.
 
@@ -137,4 +137,8 @@ Um gráfico com a distribuição de gastos por produto é salvo em:
 
 ## ✨ Autora
 Vitória Alvares dos Santos  
+### Contatos:  
+[![E-mail](https://img.shields.io/badge/-Email-000?style=for-the-badge&logo=microsoft-outlook&logoColor=007BFF)](mailto:Alvares26Sa@proton.me)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vitória-alvares/)  
+
 *Projeto do Bootcamp Santander/DIO - Ciência de Dados com Python (2025)*
